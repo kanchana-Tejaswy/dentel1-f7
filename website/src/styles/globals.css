@@ -1,0 +1,106 @@
+@import "tailwindcss";
+
+@theme {
+  /* Lumina Sanctuary Design Tokens */
+  --color-primary: #5E7A6D; /* Sage Green */
+  --color-secondary: #F8F5F0; /* Warm Ivory */
+  --color-accent: #C97B63; /* Terracotta */
+  --color-charcoal: #2D3330; /* Dark Slate */
+  --color-stone: #D1D1C7; /* Soft Gray */
+  --color-warning: #E85D75; /* Alert Coral */
+
+  /* Typography System */
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-heading: var(--font-playfair), ui-serif, Georgia, serif;
+
+  /* Radius System */
+  --radius-card: 24px;
+  --radius-premium: 32px;
+  --radius-pill: 9999px;
+
+  /* Shadow System */
+  --shadow-premium: 0 20px 40px -10px rgba(45, 51, 48, 0.08);
+  --shadow-soft: 0 10px 20px -5px rgba(45, 51, 48, 0.05);
+}
+
+@layer base {
+  :root {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply font-sans bg-secondary text-charcoal antialiased selection:bg-primary/20 selection:text-primary;
+  }
+
+  /* Focus Ring Accessibility */
+  *:focus-visible {
+    @apply outline-none ring-2 ring-primary/50 ring-offset-2 ring-offset-secondary;
+  }
+}
+
+@layer utilities {
+  /* Layout System */
+  .content-width {
+    @apply max-w-7xl mx-auto px-6 md:px-12 xl:px-16 w-full;
+  }
+  
+  .section-gap {
+    @apply py-24 md:py-32 lg:py-40;
+  }
+
+  /* Typography Utilities */
+  .label-caps {
+    @apply text-[10px] font-bold uppercase tracking-[0.2em];
+  }
+  
+  .h1 {
+    @apply font-heading text-5xl md:text-6xl lg:text-7xl font-bold leading-tight tracking-tight;
+  }
+  
+  .h2 {
+    @apply font-heading text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight;
+  }
+  
+  .h3 {
+    @apply font-heading text-2xl md:text-3xl lg:text-4xl font-bold leading-snug;
+  }
+
+  .display-large {
+    @apply font-heading text-6xl md:text-7xl lg:text-[100px] font-bold leading-[0.95] tracking-tight;
+  }
+
+  .display-medium {
+    @apply font-heading text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.05] tracking-tight;
+  }
+  
+  .body-l {
+    @apply text-lg md:text-xl font-medium leading-relaxed;
+  }
+  
+  .body-s {
+    @apply text-sm leading-relaxed;
+  }
+
+  /* Premium Utilities */
+  .glass-premium {
+    @apply bg-white/70 backdrop-blur-xl border border-white/40 shadow-premium;
+  }
+}
+
+/* Luxury Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(94, 122, 109, 0.2);
+  border-radius: 99px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(94, 122, 109, 0.4);
+}
