@@ -29,7 +29,7 @@ export function MobileStickyBar() {
               <span className="text-[10px] font-bold uppercase tracking-widest">Call</span>
             </a>
             <div className="w-px h-6 bg-white/20 mx-1" />
-            <a href="#" className="flex-1 flex items-center justify-center gap-2 text-white h-12 rounded-full hover:bg-white/10 transition-colors">
+            <a href="https://wa.me/11234567890" target="_blank" rel="noopener noreferrer" className="flex-1 flex items-center justify-center gap-2 text-white h-12 rounded-full hover:bg-white/10 transition-colors">
               <WhatsappLogo size={20} weight="fill" className="text-[#25D366]" />
               <span className="text-[10px] font-bold uppercase tracking-widest">Chat</span>
             </a>

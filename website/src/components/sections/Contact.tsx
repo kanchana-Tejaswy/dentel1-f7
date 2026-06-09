@@ -62,7 +62,7 @@ export function Contact() {
                   </div>
                   <div>
                     <p className="label-caps text-charcoal/40 mb-1">WhatsApp</p>
-                    <a href="#" className="text-lg font-bold text-charcoal hover:text-[#25D366] transition-colors">+1 (555) 000-5678</a>
+                    <a href="https://wa.me/15550005678" target="_blank" rel="noopener noreferrer" className="text-lg font-bold text-charcoal hover:text-[#25D366] transition-colors">+1 (555) 000-5678</a>
                   </div>
                 </div>
               </div>

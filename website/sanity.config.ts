@@ -4,8 +4,8 @@ import { schemaTypes } from './sanity/schemaTypes'
 export default defineConfig({
   name: 'default',
   title: 'Lumina Sanctuary',
-  projectId: 'your-project-id', // Replace with actual project ID
-  dataset: 'production',
+  projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID || 'your-project-id',
+  dataset: process.env.NEXT_PUBLIC_SANITY_DATASET || 'production',
   basePath: '/admin',
   schema: {
     types: schemaTypes,

@@ -82,7 +82,7 @@ export function AppointmentCTA() {
                       <PhoneCall size={20} weight="fill" className="text-white group-hover:scale-110 transition-transform" />
                       <span className="text-sm font-bold text-white tracking-widest">(555) 123-4567</span>
                    </a>
-                   <a href="#" className="group flex items-center justify-center gap-3 px-8 py-4 rounded-full bg-white/10 border border-white/20 hover:bg-white/20 transition-colors backdrop-blur-sm">
+                   <a href="https://wa.me/11234567890" target="_blank" rel="noopener noreferrer" className="group flex items-center justify-center gap-3 px-8 py-4 rounded-full bg-white/10 border border-white/20 hover:bg-white/20 transition-colors backdrop-blur-sm">
                       <WhatsappLogo size={20} weight="fill" className="text-[#25D366] group-hover:scale-110 transition-transform" />
                       <span className="text-sm font-bold text-white tracking-widest">WhatsApp Us</span>
                    </a>

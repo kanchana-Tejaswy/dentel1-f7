@@ -2,6 +2,7 @@
 
 import * as React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { motion } from "framer-motion";
 import { 
   GraduationCap, 
@@ -173,12 +174,12 @@ export function Doctors() {
                 </div>
 
                 <div className="mt-16">
-                   <button className="group flex items-center gap-4 text-xs font-black uppercase tracking-[0.3em] text-charcoal hover:text-primary transition-colors">
+                   <Link href="/doctors" className="group flex items-center gap-4 text-xs font-black uppercase tracking-[0.3em] text-charcoal hover:text-primary transition-colors">
                       Full Clinical Background
                       <div className="h-10 w-10 rounded-full bg-white flex items-center justify-center shadow-sm group-hover:bg-primary group-hover:text-white transition-all">
                         <ArrowRight size={16} weight="bold" />
                       </div>
-                   </button>
+                   </Link>
                 </div>
               </motion.div>
             </div>
@@ -231,9 +232,9 @@ export function Doctors() {
                            </p>
                         </div>
 
-                        <button className="text-[10px] font-black uppercase tracking-[0.2em] text-primary border-b border-primary/20 pb-1 w-fit hover:border-primary transition-all">
+                        <Link href="/doctors" className="text-[10px] font-black uppercase tracking-[0.2em] text-primary border-b border-primary/20 pb-1 w-fit hover:border-primary transition-all">
                            Profile & Experience
-                        </button>
+                        </Link>
                      </div>
                   </div>
                 </motion.div>

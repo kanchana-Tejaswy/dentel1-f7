@@ -9,10 +9,10 @@ import { Button } from "../ui/Button";
 import { cn } from "@/lib/utils/cn";
 
 const NAV_LINKS = [
-  { label: "Treatments", href: "#services" },
-  { label: "Our Team", href: "#doctors" },
-  { label: "Results", href: "#results" },
-  { label: "The Experience", href: "#first-visit" },
+  { label: "Treatments", href: "/#services" },
+  { label: "Our Team", href: "/#doctors" },
+  { label: "Results", href: "/#results" },
+  { label: "The Experience", href: "/#first-visit" },
 ];
 
 export function Navbar() {
@@ -72,7 +72,7 @@ export function Navbar() {
           </nav>
 
           <div className="hidden lg:flex items-center gap-6">
-            <Link href="#contact" className="text-xs font-bold text-charcoal/70 hover:text-charcoal uppercase tracking-widest flex items-center gap-2 transition-colors">
+            <Link href="/#contact" className="text-xs font-bold text-charcoal/70 hover:text-charcoal uppercase tracking-widest flex items-center gap-2 transition-colors">
               <MapPin size={16} /> Location
             </Link>
             <Button size="sm" className="shadow-sm px-8">Book Visit</Button>

@@ -78,10 +78,16 @@ export function Footer() {
           <div className="lg:col-span-2 lg:col-start-7">
             <h4 className="text-[10px] font-black uppercase tracking-[0.2em] text-white/40 mb-6">Treatments</h4>
             <ul className="space-y-4">
-              {["Invisalign", "Veneers", "Dental Implants", "Whitening", "Emergency"].map(item => (
-                <li key={item}>
-                  <Link href={`/services/${item.toLowerCase()}`} className="text-sm text-white/70 hover:text-white transition-colors">
-                    {item}
+              {[
+                { name: "Invisalign", slug: "invisalign" },
+                { name: "Smile Makeover", slug: "smile-makeover" },
+                { name: "Dental Implants", slug: "implants" },
+                { name: "Whitening", slug: "whitening" },
+                { name: "Emergency", slug: "emergency" }
+              ].map(item => (
+                <li key={item.slug}>
+                  <Link href={`/services/${item.slug}`} className="text-sm text-white/70 hover:text-white transition-colors">
+                    {item.name}
                   </Link>
                 </li>
               ))}
@@ -92,10 +98,16 @@ export function Footer() {
           <div className="lg:col-span-2">
             <h4 className="text-[10px] font-black uppercase tracking-[0.2em] text-white/40 mb-6">Clinic</h4>
             <ul className="space-y-4">
-              {["Our Team", "The Experience", "Results Gallery", "Patient Portal", "Contact"].map(item => (
-                <li key={item}>
-                  <Link href={`/${item.toLowerCase().replace(" ", "-")}`} className="text-sm text-white/70 hover:text-white transition-colors">
-                    {item}
+              {[
+                { name: "Our Team", href: "/team" },
+                { name: "The Experience", href: "/experience" },
+                { name: "Results Gallery", href: "/results" },
+                { name: "Reviews", href: "/reviews" },
+                { name: "Contact", href: "/contact" }
+              ].map(item => (
+                <li key={item.href}>
+                  <Link href={item.href} className="text-sm text-white/70 hover:text-white transition-colors">
+                    {item.name}
                   </Link>
                 </li>
               ))}
@@ -125,13 +137,13 @@ export function Footer() {
           </p>
           
           <div className="flex items-center gap-4">
-            <a href="#" className="h-10 w-10 rounded-full bg-white/5 flex items-center justify-center text-white/60 hover:text-white hover:bg-white/10 transition-all" aria-label="Instagram">
+            <a href="#!" className="h-10 w-10 rounded-full bg-white/5 flex items-center justify-center text-white/60 hover:text-white hover:bg-white/10 transition-all" aria-label="Instagram">
               <InstagramLogo size={18} weight="fill" />
             </a>
-            <a href="#" className="h-10 w-10 rounded-full bg-white/5 flex items-center justify-center text-white/60 hover:text-white hover:bg-white/10 transition-all" aria-label="Facebook">
+            <a href="#!" className="h-10 w-10 rounded-full bg-white/5 flex items-center justify-center text-white/60 hover:text-white hover:bg-white/10 transition-all" aria-label="Facebook">
               <FacebookLogo size={18} weight="fill" />
             </a>
-            <a href="#" className="h-10 w-10 rounded-full bg-white/5 flex items-center justify-center text-white/60 hover:text-white hover:bg-white/10 transition-all" aria-label="TikTok">
+            <a href="#!" className="h-10 w-10 rounded-full bg-white/5 flex items-center justify-center text-white/60 hover:text-white hover:bg-white/10 transition-all" aria-label="TikTok">
               <TiktokLogo size={18} weight="fill" />
             </a>
           </div>

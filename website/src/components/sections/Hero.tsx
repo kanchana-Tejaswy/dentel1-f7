@@ -2,6 +2,7 @@
 
 import * as React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { motion } from "framer-motion";
 import { Button } from "../ui/Button";
 import { 
@@ -96,14 +97,18 @@ export function Hero() {
                 custom={0.3}
                 className="flex flex-col sm:flex-row gap-5 mb-16"
               >
-                <Button size="lg" className="h-[72px] px-12 shadow-premium text-lg group">
-                  <CalendarCheck size={24} weight="bold" className="mr-3" />
-                  Book Private Visit
-                </Button>
-                <Button variant="outline" size="lg" className="h-[72px] px-12 group bg-white/20 backdrop-blur-sm">
-                  <WhatsappLogo size={24} weight="regular" className="mr-3 text-[#25D366] group-hover:scale-110 transition-transform" />
-                  WhatsApp Inquiry
-                </Button>
+                <Link href="/book">
+                  <Button size="lg" className="h-[72px] px-12 shadow-premium text-lg group w-full sm:w-auto">
+                    <CalendarCheck size={24} weight="bold" className="mr-3" />
+                    Book Private Visit
+                  </Button>
+                </Link>
+                <Link href="https://wa.me/11234567890" target="_blank" rel="noopener noreferrer">
+                  <Button variant="outline" size="lg" className="h-[72px] px-12 group bg-white/20 backdrop-blur-sm w-full sm:w-auto">
+                    <WhatsappLogo size={24} weight="regular" className="mr-3 text-[#25D366] group-hover:scale-110 transition-transform" />
+                    WhatsApp Inquiry
+                  </Button>
+                </Link>
               </motion.div>
 
               {/* Review Snippet: Immediate Social Proof */}

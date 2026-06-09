@@ -93,7 +93,7 @@ const SERVICE_CATEGORIES: Category[] = [
         benefit: "Restore function",
         desc: "Custom porcelain restorations designed for strength and beauty.",
         icon: HandHeart,
-        href: "/services/restorative",
+        href: "/services/implants",
       }
     ]
   },
@@ -109,7 +109,7 @@ const SERVICE_CATEGORIES: Category[] = [
         benefit: "Total transformation",
         desc: "Clinical artistry to create your most confident, natural look.",
         icon: MagicWand,
-        href: "/services/veneers",
+        href: "/services/smile-makeover",
       },
       {
         title: "Professional Whitening",
@@ -139,7 +139,7 @@ const SERVICE_CATEGORIES: Category[] = [
         benefit: "Precise alignment",
         desc: "Advanced ceramic or traditional systems for complex cases.",
         icon: Target,
-        href: "/services/orthodontics",
+        href: "/services/invisalign",
       }
     ]
   },
@@ -155,7 +155,7 @@ const SERVICE_CATEGORIES: Category[] = [
         benefit: "Preventative wellness",
         desc: "Proactive care to protect your oral and systemic health.",
         icon: ShieldPlus,
-        href: "/services/general",
+        href: "/services/whitening",
       },
       {
         title: "Pediatric Care",
